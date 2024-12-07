@@ -1,0 +1,142 @@
+* {
+    /* background-color: #121212; */
+    /* border: 40px solid white; */
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Общий контейнер чата */
+.chat-container {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #121212; /* Темный фон */
+  }
+  
+  /* Контейнер сообщений */
+  .messages-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    background-color: #1f1f1f; /* Темный фон для контейнера сообщений */
+    color: #e0e0e0; /* Светлый цвет текста */
+  }
+  
+  /* Список сообщений */
+  .message-list {
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    color: #e0e0e0; /* Светлый текст */
+  }
+  
+  /* Сообщение */
+  .message {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #333; /* Темные границы */
+    word-wrap: break-word;
+    background-color: #2a2a2a; /* Темный фон сообщений */
+    border-radius: 5px;
+  }
+  
+  /* Ввод сообщения */
+  .message-input {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    align-items: stretch;
+    box-sizing: border-box;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-inline: 10px;
+    border-radius: 10px;
+    background-color: #2a2a2a; /* Темный фон ввода */
+  }
+  
+  /* Стиль инпута */
+  .message-input input {
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #444; /* Темные границы инпута */
+    box-sizing: border-box;
+    height: 40px;
+    min-width: 0;
+    background-color: #1f1f1f; /* Темный фон инпута */
+    color: #e0e0e0; /* Светлый цвет текста */
+  }
+  
+  /* Стиль кнопки */
+  .message-input button {
+    padding: 10px 20px;
+    background-color: #e53935; /* Красный фон */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    height: 40px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+  }
+  
+  /* Ховер для кнопки */
+  .message-input button:hover {
+    background-color: #c62828; /* Более темный красный на ховер */
+  }
+  
+  /* Сайдбар с пользователями */
+
+  .sidebar {
+    width: 150px;
+    background-color: #181818; /* Темный фон для сайдбара */
+    padding: 20px;
+    overflow-y: auto;
+    height: 100vh;
+    box-sizing: border-box;
+    color: #e0e0e0; /* Светлый текст */
+    display: flex;
+    flex-direction: column; /* Добавим вертикальную раскладку */
+    justify-content: space-between; /* Распределим контент так, чтобы кнопка была внизу */
+  }
+
+  .settings-btn {
+    background-color: #181818;
+    border: none;
+    color: #e53935; /* Красный цвет для кнопки */
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    margin-top: auto; /* Отодвигает кнопку вниз */
+  }
+
+  .settings-btn:hover{
+    background-color: #181818;
+    color: #c62828;
+  }
+  
+  /* Иконка пользователя в сайдбаре */
+  .user-icon {
+    width: 25px;
+    height: 25px;
+    margin-bottom: 5px;
+    background-color: #e53935; /* Красная иконка */
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    text-align: center;
+  }
+  
